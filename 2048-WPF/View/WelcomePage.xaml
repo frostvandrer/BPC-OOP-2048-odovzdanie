@@ -1,0 +1,53 @@
+﻿<Page x:Class="_2048_WPF.View.WelcomePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:_2048_WPF.View"
+      mc:Ignorable="d" 
+      Title="WelcomeWindow"
+      Height="500"
+      Width="500"
+      Background="LightYellow">
+
+    <Page.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Width" Value="300"></Setter>
+            <Setter Property="HorizontalContentAlignment" Value="Center"></Setter>
+            <Setter Property="FontSize" Value="40"></Setter>
+        </Style>
+
+        <Style TargetType="Label">
+            <Setter Property="HorizontalContentAlignment" Value="Center"></Setter>
+            <Setter Property="FontSize" Value="50"></Setter>
+            <Setter Property="Margin" Value="0,0,0,60"></Setter>
+        </Style>
+    </Page.Resources>
+
+    <Grid>
+        <StackPanel>
+
+            <!-- Menu Buttons -->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Label Grid.Row="0" Grid.Column="0" Content="2048"></Label>
+
+                <Button Click="NewGameButton_Click" Grid.Row="1" Grid.Column="0" Content="New Game"></Button>
+                <Button Click="ContinueButton_Click" Grid.Row="2" Grid.Column="0" Content="Continue"></Button>
+                <Button Click="StatisticsButton_Click" Grid.Row="3" Grid.Column="0" Content="Statistics"></Button>
+                <Button Click="ExitButton_Click" Grid.Row="4" Grid.Column="0" Content="Exit"></Button>
+            </Grid>
+        </StackPanel>
+    </Grid>
+</Page>

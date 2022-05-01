@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="View\Continue.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\EnterName.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\GameBoard.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\GameOver.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Statistics.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\WelcomePage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Data\GameDataClasses.dbml">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Resources\StylesDictionary.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Continue.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\EnterName.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\GameBoard.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\GameOver.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Statistics.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\WelcomePage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

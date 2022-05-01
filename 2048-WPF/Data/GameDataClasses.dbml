@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="GameData" Class="GameDataClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Data\GameData.mdf;Integrated Security=True" SettingsObjectName="_2048_WPF.Properties.Settings" SettingsPropertyName="GameDataConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Player" Member="Players">
+    <Type Name="Player">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PlayerName" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="PlayerScore" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PlayerMoves" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="GameBoard" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.GameStatus" Member="GameStatus">
+    <Type Name="GameStatus">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CurrentPlayer" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="ContinueFlag" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
